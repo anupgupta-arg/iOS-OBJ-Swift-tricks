@@ -1,0 +1,13 @@
+extension NSDictionary {
+func removeNullFromNSDictionary() -> NSDictionary {
+        let dict = self
+        let mutableDict : NSMutableDictionary = dict.mutableCopy() as! NSMutableDictionary
+        let keysToRemove = Array(dict.allKeys.filter {dict [$0] is NSNull})
+        print(dict)
+        for key in keysToRemove {
+            
+            mutableDict[key as! String] = ""
+        }
+        return mutableDict
+    }
+    }
