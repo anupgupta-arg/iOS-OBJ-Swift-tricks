@@ -1,0 +1,35 @@
+
+This is Steps How you will call A method of swift in Objective C
+
+Step 1:
+
+Create A class Of Swift.
+
+import UIKit
+
+@objc class test: NSObject {
+
+    
+@objc  func testFunc() {
+        print("Yes You Can call me")
+    }
+}
+
+
+Step 2:
+Import Swift File In Objective C File 
+
+#import "<Project Name>-Swift.h" In .h File
+
+Step 3:
+Create A Object Of Swift Class in Objective C
+
+test * testObj = [[test alloc]init];
+
+Step 4:
+Call A func
+
+[testObj testFunc];
+
+Enjoy Codeing
+
