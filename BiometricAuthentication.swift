@@ -67,7 +67,7 @@ class BiometricAuthentication {
 
 // Below methed to use Biometric Authentication
 
-
+/*
  func checkForBiometricAuthentication() {
     BiometricAuthentication.getSingleton().authenticate( authentication: {(authenticationResult) -> Void in
         
@@ -80,5 +80,5 @@ class BiometricAuthentication {
     })
     
 }
-
+*/
 
