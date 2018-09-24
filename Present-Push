@@ -1,0 +1,20 @@
+if you are trying to present your View you can do with 2 ways
+
+1. Method 1
+
+      let storyBoard : UIStoryboard = UIStoryboard(name: "Settings", bundle: nil)
+      let vc = storyBoard.instantiateViewController(withIdentifier: "SettingsVCID");
+      present(vc, animated: true, completion: nil)
+      
+      
+      but Using method 1 you can't push view controller from your Presented view controller 
+2. Method 2 
+
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Settings", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "SettingsVCID");
+            let navCntr = UINavigationController.init(rootViewController: vc);
+            
+            let window = UIApplication.shared.keyWindow;
+            window?.rootViewController?.present(navCntr, animated: true, completion: nil);
+
+this is good way now you can do push view controller from your Presented view controller 
