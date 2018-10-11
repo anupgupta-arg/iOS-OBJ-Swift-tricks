@@ -36,13 +36,13 @@ class BiometricAuthentication {
         //  That's usually not what you want.
         let context = LAContext()
         
-        context.localizedCancelTitle = "Cancel".localiz()
+        context.localizedCancelTitle = "Cancel"
         
         // First check if we have the needed hardware support.
         var error: NSError?
         if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
             
-            let reason = "to redeem this".localiz()
+            let reason = "to access app"
             context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason ) { success, error in
                 
                 if success {
