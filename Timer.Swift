@@ -5,7 +5,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
 
     var countdownTimer: Timer!
-    var totalTime = 60
+    var totalTime = 60 // In Sec
 
 
     override func viewDidLoad() {
